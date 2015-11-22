@@ -1,0 +1,22 @@
+{
+  "name": "nxlib/nosqlodm",
+  "description": "nosql-odm",
+  "keywords": ["mongodb"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Garming Lau",
+      "email": "liujiaming@joyport.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "NxLib\\NosqlDB\\": "src/"
+    }
+  }
+}
