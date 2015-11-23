@@ -27,4 +27,5 @@ interface DBInterface
     public function insert(array $data);
     public function update(array $filter,array $data,array $options = []);
     public function delete(array $filter,array $options = []);
+    public function createId($str_id);
 }

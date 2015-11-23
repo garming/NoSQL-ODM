@@ -26,3 +26,9 @@ $rs = $db->findAll();
 foreach($rs as $value){
     var_dump($value);
 }
+
+echo "=============find all end==============\n";
+
+$filter = ['_id' => $db->createId('56518ac45a8e06050723ddf1')];
+$rs = $db->findOne($filter);
+var_dump($rs);

@@ -16,6 +16,7 @@ use \MongoDB\Driver\ReadPreference;
 use \MongoDB\Driver\BulkWrite;
 use \MongoDB\Driver\WriteConcern;
 use \MongoDB\Driver\Query;
+use \MongoDB\BSON\ObjectID;
 use NxLib\NosqlDB\Lib\FeatureDetection;
 
 class DB implements DBInterface
@@ -330,5 +331,12 @@ class DB implements DBInterface
              */
             "sort" => array(),
         );
+    }
+    public function createId($str_id)
+    {
+        if(empty($str_id)){
+            return null;
+        }
+        return new ObjectID($str_id);
     }
 }
